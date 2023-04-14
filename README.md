@@ -16,6 +16,29 @@ Subir proyecto
 
 # Set Password
 
-dokku config:set notebook NOTEBOOK_PASSWORD="yourpassword"
+Aquí deberemos generar una nueva contraseña, para ello lo mas fácil es abrir un notebook y generarla con el siguiente comando 
+
+    from notebook.auth import passwd
+    passwd()
+
+Donde deberemos elegir la contraseña a generar, y nos generara un sha
+
+    dokku config:set notebook NOTEBOOK_PASSWORD="<your-password>"
 
 # Persist Notebooks
+
+
+Crear el directorio dentro de `/var/lib/dokku/data/storage` con el nombre de la app
+
+    sudo mkdir /var/lib/dokku/data/storage/notebooks
+
+Vincular el directorio, necesitamos montar en disco un directorio donde almacenaremos los
+notebooks que vayamos creando.
+
+
+    dokku storage:mount notebook /var/lib/dokku/data/storage/notebooks:/notebooks
+
+Notar que en esta caso montamos el storage como `/notebooks` deberemos configurar esta ruta como 
+variable de entorno
+
+    dokku config:set notebook NOTEBOOK_DIR="/notebooks"
