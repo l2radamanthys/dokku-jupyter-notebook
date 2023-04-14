@@ -1,1 +1,1 @@
-web: jupyter notebook --no-browser --port $PORT --config=jupyter_notebook_config.py 
+web: jupyter notebook --no-browser --port 5000 --config=jupyter_notebook_config.py 
