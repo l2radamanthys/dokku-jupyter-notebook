@@ -1,1 +1,1 @@
-web: jupyter notebook --no-browser --no-mathjax --port 5000 --config=jupyter_notebook_config.py 
+web: jupyter notebook --no-browser --no-mathjax --port $PORT --config=jupyter_notebook_config.py 
