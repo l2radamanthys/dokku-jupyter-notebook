@@ -35,7 +35,6 @@ Crear el directorio dentro de `/var/lib/dokku/data/storage` con el nombre de la 
 Vincular el directorio, necesitamos montar en disco un directorio donde almacenaremos los
 notebooks que vayamos creando.
 
-
     dokku storage:mount notebook /var/lib/dokku/data/storage/notebooks:/notebooks
 
 Notar que en esta caso montamos el storage como `/notebooks` deberemos configurar esta ruta como 
