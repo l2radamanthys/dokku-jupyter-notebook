@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "dokku": {}
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  }
+}
