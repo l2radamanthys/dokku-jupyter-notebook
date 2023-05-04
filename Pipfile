@@ -10,6 +10,7 @@ requests = "*"
 pandas = "*"
 numpy = "*"
 dateutils = "*"
+openpyxl = "*"
 
 [dev-packages]
 
