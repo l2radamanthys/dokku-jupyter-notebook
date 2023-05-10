@@ -12,6 +12,7 @@ numpy = "*"
 dateutils = "*"
 openpyxl = "*"
 plotly = "*"
+jupyterthemes = "*"
 
 [dev-packages]
 
