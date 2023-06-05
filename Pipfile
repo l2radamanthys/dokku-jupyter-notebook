@@ -5,8 +5,12 @@ name = "pypi"
 
 [packages]
 jupyter = "*"
-notebook = "*"
-requests = "*"
+notebook = "==6.5.4"
+requests = "==2.28.2"
+beautifulsoup4 = "*"
+# scrapy = "*"
+# lxml = "*"
+openpyxl = "==3.0.10"
 
 [dev-packages]
 
