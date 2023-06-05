@@ -12,6 +12,11 @@ beautifulsoup4 = "==4.12.2"
 # scrapy = "*"
 # lxml = "*"
 openpyxl = "==3.0.10"
+pandas = "*"
+numpy = "*"
+dateutils = "*"
+plotly = "*"
+jupyterthemes = "*"
 
 [dev-packages]
 
