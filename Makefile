@@ -23,3 +23,9 @@ notebook:
 
 lab:
 	@pipenv run jupyter lab --no-browser --NotebookApp.token='' --NotebookApp.password=''
+
+deploy:
+	git push dokku main:master -f
+
+deploy_enjambre:
+	git push enjambre main:master -f
