@@ -1,5 +1,18 @@
 # dokku-jupyter-notebook
-Jupyter notebook and more for dokku
+Levantar jupyter notebook en instancia para un solo usuario.
+
+# Librerias incluidas
+
+- pandas
+- numpy
+- plotly
+- dateutils
+- tabulate
+- requests
+- beautifulsoup4
+- scrapy
+- lxml
+- openpyxl
 
 # Instalación
 
@@ -30,7 +43,7 @@ Donde deberemos elegir la contraseña a generar, y nos generara un sha
 
 Crear el directorio dentro de `/var/lib/dokku/data/storage` con el nombre de la app
 
-    sudo mkdir /var/lib/dokku/data/storage/notebooks
+    sudo mkdir -p /var/lib/dokku/data/storage/notebooks
 
 Vincular el directorio, necesitamos montar en disco un directorio donde almacenaremos los
 notebooks que vayamos creando.
